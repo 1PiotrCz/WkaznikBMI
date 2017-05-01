@@ -12,21 +12,21 @@ public class Main {
 
         System.out.println("Podaj ile masz lat");
         int age = input.nextInt();
-        System.out.println("Twój wiek to " + age);
+        System.out.println(name + " Twój wiek to " + age);
 
         System.out.println("Podaj Twój wzrost");
         double growth = input.nextDouble();
-        System.out.println("Podaj Twoją wagę");
+        System.out.println(name + " Podaj Twoją wagę");
         double weight = input.nextDouble();
 
         growth = growth / 100;
         double bmi = weight / (Math.pow(growth, 2));
-        System.out.println("Twój indeks BMI wynosi " + bmi);
+        System.out.println(name + " Twój indeks BMI wynosi " + bmi);
 
         if (bmi < 18.5) {
-            System.out.println("Jesteś zbyt szczupły/a");
+            System.out.println("Masz zbyt małą wagę");
         } else if (bmi > 25) {
-            System.out.println("Jesteś zbyt gruby/a");
+            System.out.println("Masz zbyt dużą wagę");
         } else {
             System.out.println("Masz dobry wskaźnik");
         }
